@@ -1,0 +1,23 @@
+﻿<h2>Chain Reaction</h2>
+<div>    
+    <img src="Images/362.1314116930.jpeg" class="homePageGameImg" />
+    <br />
+    <br />
+    <br />
+    <br />
+        <p>Enter players name</p>
+        <div id="divPlayers" >
+            <div ng-repeat="player in totalPlayers">
+                <input type="color" id="c-{{player.playerNumber}}" ng-init="color[player.playerNumber]='#ff0000'" ng-model="color[player.playerNumber]" value="#ff0000">
+                <input id="p-{{player.playerNumber}}"  ng-model="playersName[player.playerNumber]"  style="margin:10px" type="text">            
+                <input type="image" id="img-{{player.playerNumber}}" ng-hide="player.playerNumber==1 ||player.playerNumber==2"   
+                     width="20px" height="20px" src="Images/closed.png" ng-click="removePlayer(player.playerNumber) "  />
+            </div>            
+        </div>
+        <button type="button" ng-click="addPlayer()"  ng-show="totalPlayers.length<7">+</button>
+
+        <div style="padding:30px">
+            <button  ng-click="startGame()">Start</button>
+        </div>
+    
+</div>

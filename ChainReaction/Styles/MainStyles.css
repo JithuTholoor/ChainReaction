@@ -1,0 +1,230 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+
+.keyframe-fadein,
+.keyframe-fade.ng-move {
+    -webkit-animation: 0.5s fade-in;
+    animation: 0.5s fade-in;
+    -webkit-animation: 0.5s rotate infinite;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+.keyframe-fadeout {
+    -webkit-animation: 0.5s fade-out;
+    animation: 0.5s fade-out;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/***************************************/
+.mainTable {
+    width: 100%;
+    display: table;
+}
+
+.maintableRow {
+    width: 100%;
+    display: table-row;
+}
+
+.tableCell {
+    display: table-cell;
+}
+
+.gameBoxe {
+    width: 75px;
+    height: 75px;
+}
+
+.nucleus {
+    width: 25px;
+    height: 20px;
+}
+
+    .nucleus.nucleus1 {
+        top: 20px;
+        left: 20px;
+        /*-webkit-animation: 0.1s rotate infinite;*/
+    }
+
+    .nucleus.nucleus2 {
+        top: 30px;
+        left: 30px;
+        /*-webkit-animation: 0.1s rotate infinite;*/
+    }
+
+    .nucleus.nucleus3 {
+        top: 30px;
+        left: 10px;
+        /*-webkit-animation: 0.1s rotate infinite;*/
+    }
+
+    .nucleus.nucleus4 {
+        top: 20px;
+        left: 40px;
+        /*-webkit-animation: 0.05s rotate infinite;*/
+    }
+
+    .nucleus.nucleus4 {
+        top: 25px;
+        left: 25px;
+    }
+
+
+.homePageGameImg {
+    width: 400px;
+    height: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .mainTable {
+        width: 100%;
+        display: block;
+    }
+
+    .maintableRow {
+        width: 100%;
+        display: block;
+    }
+
+    .tableCell {
+        display: block;
+    }
+
+    .gameBoxe {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nucleus {
+        width: 12px;
+        height: 10px;
+    }
+
+        .nucleus.nucleus1 {
+            top: 14px;
+            left: 14px;
+        }
+
+        .nucleus.nucleus2 {
+            top: 20px;
+            left: 20px;
+        }
+
+        .nucleus.nucleus3 {
+            top: 20px;
+            left: 7px;
+        }
+
+        .nucleus.nucleus4 {
+            top: 14px;
+            left: 13px;
+        }
+
+        .nucleus.nucleus4 {
+            top: 15px;
+            left: 15px;
+        }
+
+    .homePageGameImg {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mainTable {
+        width: 100%;
+        display: block;
+    }
+
+    .maintableRow {
+        width: 100%;
+        display: block;
+    }
+
+    .tableCell {
+        display: block;
+    }
+
+    .gameBoxe {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nucleus {
+        width: 12px;
+        height: 10px;
+    }
+
+    .homePageGameImg {
+        width: 250px;
+        height: 180px;
+    }
+}
